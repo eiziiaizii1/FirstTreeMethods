@@ -78,25 +78,5 @@ class Node{
 	    return count;
 	}
 	
-	
 }
-
-
-public class Test{
-	public static void main(String[] args) {
-		
-		
-		 Node[] child = {new Node(-1.0), new Node (4.0), new Node(7.0)};
-		 Node[] grandChild1 = {new Node(1), new Node (2), new Node(3)};
-		 child[1].setChild(grandChild1);
-		 
-		 
-		 Node root = new Node(10.0, child);
-		 
-		
-		root.showContent();
-		System.out.println(root.sumOfAllNumbers());
-		System.out.println(root.printValueOfLeaf());
-		System.out.println(root.getChildrenCount());
-	}
 }
